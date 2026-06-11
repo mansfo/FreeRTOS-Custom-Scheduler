@@ -1,0 +1,17 @@
+{
+    "global": {
+        "xGlobalPolicy": "POLICY_SKIP",
+        "xTraceEnabled": "true",
+        "uxMaxTasks": 8
+    },
+    "xTasks": [
+        { "pcName": "Task_A", "xEntry": "vBusyWaitTask", "ulStackSize": 200, "uxPriority": 10, "ulPeriod": 150, "ulDeadline": 50, "pvArg": 20 },
+        { "pcName": "Task_B", "xEntry": "vBusyWaitTask", "ulStackSize": 200, "uxPriority": 9, "ulPeriod": 150, "ulDeadline": 20, "pvArg": 10 },
+        { "pcName": "Task_C", "xEntry": "vBusyWaitTask", "ulStackSize": 200, "uxPriority": 8, "ulPeriod": 150, "ulDeadline": 10, "pvArg": 10 },
+        { "pcName": "Task_D", "xEntry": "vBusyWaitTask", "ulStackSize": 200, "uxPriority": 7, "ulPeriod": 150, "ulDeadline": 20, "pvArg": 10 },
+        { "pcName": "Task_E", "xEntry": "vBusyWaitTask", "ulStackSize": 200, "uxPriority": 6, "ulPeriod": 200, "ulDeadline": 100, "pvArg": 20 },
+        { "pcName": "Task_F", "xEntry": "vBusyWaitTask", "ulStackSize": 200, "uxPriority": 5, "ulPeriod": 200, "ulDeadline": 100, "pvArg": 10 },
+        { "pcName": "Task_G", "xEntry": "vBusyWaitTask", "ulStackSize": 200, "uxPriority": 3, "ulPeriod": 400, "ulDeadline": 200, "pvArg": 15 },
+        { "pcName": "Task_H", "xEntry": "vBusyWaitTask", "ulStackSize": 200, "uxPriority": 3, "ulPeriod": 500, "ulDeadline": 300, "pvArg": 10 }
+    ]
+}

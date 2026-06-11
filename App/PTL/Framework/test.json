@@ -1,0 +1,38 @@
+{
+    "global_conf" :
+        {
+            "xGlobalPolicy" : "POLICY_SKIP",
+            "xTraceEnabled" : "true",
+            "uxMaxTasks" : 8
+        }
+    ,
+    "xTasks" : [
+        {
+            "pcName" : "A",
+            "xEntry" : "vDelayRoutine",
+            "ulStackSize" : 200,
+            "uxPriority" : 3,
+            "ulPeriod" : 100,
+            "ulDeadline" : 90,
+            "pvArg" : 10
+        },
+        {
+            "pcName" : "B",
+            "xEntry" : "vDelayRoutine",
+            "ulStackSize" : 200,
+            "uxPriority" : 3,
+            "ulPeriod" : 100,
+            "ulDeadline" : 90,
+            "pvArg" : 10
+        },{
+            "pcName" : "C",
+            "xEntry" : "vBusyWaitTask",
+            "ulStackSize" : 200,
+            "uxPriority" : 4,
+            "ulPeriod" : 100,
+            "ulDeadline" : 90,
+            "pvArg" : 10
+        }
+        
+    ]
+}
